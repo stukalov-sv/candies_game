@@ -12,7 +12,8 @@ def first_turn_tossup() -> bool:
 
 
 def basic_bot_player() -> int:
-    bot_turn = random.randint(1, 28)
+    global candies_turn
+    bot_turn = random.randint(1, candies_turn)
     return bot_turn
 
 
