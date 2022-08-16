@@ -22,41 +22,6 @@ def mind_bot_player(player_turn: int) -> int:
     return bot_turn
 
 
-# def p_vs_mind_bot(candies_amount: int, tossup: bool, first_bot_turn: bool) -> bool:
-#     winner = False
-
-#     while candies_amount > 0:
-#         while tossup:
-#             winner = False
-#             player_turn = player_turn(first_name)
-#             if player_turn < 29:
-#                 tossup = False
-#                 print(f'{first_name} take: {player_turn}')
-#                 candies_amount -= player_turn
-#                 print(f'Candies left: {candies_amount}')
-#             else:
-#                 print('Incorrect data')
-
-#         if (candies_amount > 0 and not tossup):
-#             if (first_bot_turn):
-#                 bot_player = 19 # (amount % cand_turn + 1) - 1
-#                 tossup = True
-#                 print(f'Computer take: {bot_player}')
-#                 candies_amount -= bot_player
-#                 print(f'Candies left: {candies_amount}')
-#                 first_bot_turn = False
-#             elif (candies_amount < 2):
-#                 winner = True
-#                 candies_amount -= candies_amount
-#             else:
-#                 bot_player = mind_bot_player(player_turn)
-#                 tossup = True
-#                 print(f'Computer take: {bot_player}')
-#                 candies_amount -= bot_player
-#                 print(f'Candies left: {candies_amount}')
-#     return winner
-
-
 def help(update, context):
     context.bot.send_message(update.effective_chat.id, '/help - помощь\n'
                                                        '/start - начало игры\n')
